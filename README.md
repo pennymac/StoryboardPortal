@@ -1,5 +1,7 @@
 # StoryboardPortal
 
+[![Build Status](https://magnum.travis-ci.com/pennymac/StoryboardPortal.png?token=KvBtKQs616ELBMQxp2n7&branch=master)](https://magnum.travis-ci.com/pennymac/StoryboardPortal)
+
 > "Spectacular. You appear to understand how a portal affects forward momentum, or to be more precise, how it does not. Momentum, a function of mass and velocity, is conserved between portals. In layman's terms: speedy thing goes in, speedy thing comes out."
 
 

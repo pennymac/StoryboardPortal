@@ -11,7 +11,6 @@
 		830BE185182360C800EDDF88 /* StoryboardPortal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 830BE184182360C800EDDF88 /* StoryboardPortal.h */; };
 		830BE187182360C800EDDF88 /* StoryboardPortal.m in Sources */ = {isa = PBXBuildFile; fileRef = 830BE186182360C800EDDF88 /* StoryboardPortal.m */; };
 		830BE18F182360C800EDDF88 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830BE18E182360C800EDDF88 /* SenTestingKit.framework */; };
-		830BE191182360C800EDDF88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830BE190182360C800EDDF88 /* UIKit.framework */; };
 		830BE192182360C800EDDF88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830BE17F182360C800EDDF88 /* Foundation.framework */; };
 		830BE195182360C800EDDF88 /* libStoryboardPortal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 830BE17C182360C800EDDF88 /* libStoryboardPortal.a */; };
 		830BE19B182360C800EDDF88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 830BE199182360C800EDDF88 /* InfoPlist.strings */; };
@@ -22,6 +21,9 @@
 		830BE1B21823610B00EDDF88 /* ASPortalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830BE1AC1823610B00EDDF88 /* ASPortalController.m */; };
 		830BE1B31823610B00EDDF88 /* ASTabBarPortalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830BE1AE1823610B00EDDF88 /* ASTabBarPortalController.m */; };
 		830BE1B41823610B00EDDF88 /* ASTabBarPortalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830BE1AE1823610B00EDDF88 /* ASTabBarPortalController.m */; };
+		83AB06FC182AC1EE003780EF /* StoryboardPortal.m in Sources */ = {isa = PBXBuildFile; fileRef = 830BE186182360C800EDDF88 /* StoryboardPortal.m */; };
+		83AB0704182B1189003780EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83AB0703182B1189003780EF /* UIKit.framework */; };
+		83AB0705182B11C1003780EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83AB0703182B1189003780EF /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +57,6 @@
 		830BE186182360C800EDDF88 /* StoryboardPortal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryboardPortal.m; sourceTree = "<group>"; };
 		830BE18D182360C800EDDF88 /* StoryboardPortalTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryboardPortalTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		830BE18E182360C800EDDF88 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		830BE190182360C800EDDF88 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		830BE198182360C800EDDF88 /* StoryboardPortalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StoryboardPortalTests-Info.plist"; sourceTree = "<group>"; };
 		830BE19A182360C800EDDF88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		830BE19C182360C800EDDF88 /* StoryboardPortalTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryboardPortalTests.h; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 		830BE1AC1823610B00EDDF88 /* ASPortalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPortalController.m; sourceTree = "<group>"; };
 		830BE1AD1823610B00EDDF88 /* ASTabBarPortalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTabBarPortalController.h; sourceTree = "<group>"; };
 		830BE1AE1823610B00EDDF88 /* ASTabBarPortalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTabBarPortalController.m; sourceTree = "<group>"; };
+		83AB0703182B1189003780EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83AB0704182B1189003780EF /* UIKit.framework in Frameworks */,
 				830BE180182360C800EDDF88 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,8 +85,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				830BE18F182360C800EDDF88 /* SenTestingKit.framework in Frameworks */,
-				830BE191182360C800EDDF88 /* UIKit.framework in Frameworks */,
 				830BE192182360C800EDDF88 /* Foundation.framework in Frameworks */,
+				83AB0705182B11C1003780EF /* UIKit.framework in Frameworks */,
 				830BE195182360C800EDDF88 /* libStoryboardPortal.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,9 +116,9 @@
 		830BE17E182360C800EDDF88 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83AB0703182B1189003780EF /* UIKit.framework */,
 				830BE17F182360C800EDDF88 /* Foundation.framework */,
 				830BE18E182360C800EDDF88 /* SenTestingKit.framework */,
-				830BE190182360C800EDDF88 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				830BE1B01823610B00EDDF88 /* ASNavigationPortalController.m in Sources */,
 				830BE1B21823610B00EDDF88 /* ASPortalController.m in Sources */,
 				830BE1B41823610B00EDDF88 /* ASTabBarPortalController.m in Sources */,
+				83AB06FC182AC1EE003780EF /* StoryboardPortal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +378,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/StoryboardPortal.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StoryboardPortal/StoryboardPortal-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -386,6 +394,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/StoryboardPortal.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StoryboardPortal/StoryboardPortal-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -398,12 +410,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StoryboardPortal/StoryboardPortal-Prefix.pch";
 				INFOPLIST_FILE = "StoryboardPortalTests/StoryboardPortalTests-Info.plist";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -413,12 +426,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StoryboardPortal/StoryboardPortal-Prefix.pch";
 				INFOPLIST_FILE = "StoryboardPortalTests/StoryboardPortalTests-Info.plist";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -443,6 +457,7 @@
 				830BE1A3182360C800EDDF88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		830BE1A4182360C800EDDF88 /* Build configuration list for PBXNativeTarget "StoryboardPortalTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +466,7 @@
 				830BE1A6182360C800EDDF88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

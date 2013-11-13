@@ -10,7 +10,7 @@
 
 @interface ASPortalController ()
 
-@property (nonatomic, strong) UINavigationController *destinationViewController;
+@property (nonatomic, strong) UIViewController *destinationViewController;
 
 @end
 
@@ -18,20 +18,25 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
+
     [self validatePresenceOfStoryboardName];
-    
+
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:self.storyboardName
                                                          bundle:nil];
-    UINavigationController *controller = [storyboard instantiateInitialViewController];
+    UIViewController *controller = [storyboard instantiateInitialViewController];
     self.destinationViewController = controller;
+
+    [self addChildViewController:self.destinationViewController];
+
+    if (_destinationViewController.tabBarItem) {
+        self.tabBarItem = _destinationViewController.tabBarItem;
+    }
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [self addChildViewController:self.destinationViewController];
+
     [self.view addSubview:self.destinationViewController.view];
     [self.destinationViewController didMoveToParentViewController:self];
 }

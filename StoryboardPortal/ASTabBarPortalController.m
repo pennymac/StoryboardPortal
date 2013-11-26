@@ -18,35 +18,35 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
+
     [self validatePresenceOfStoryboardName];
-    
+
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:self.storyboardName
                                                          bundle:nil];
     UITabBarController *controller = [storyboard instantiateInitialViewController];
     self.destinationViewController = controller;
-    
-    [self validateTabIndex];
-    
-    self.destinationViewController.selectedIndex = _selectedTabIndex;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     [self addChildViewController:self.destinationViewController];
     [self.view addSubview:self.destinationViewController.view];
     [self.destinationViewController didMoveToParentViewController:self];
+
+    [self validateTabIndex];
+
+    self.destinationViewController.selectedIndex = _selectedTabIndex;
 }
 
 # pragma mark - Validations
 
 - (void)validateTabIndex {
     if (!_selectedTabIndex) _selectedTabIndex = 0;
-    
+
     BOOL hasValidTabIndex = _selectedTabIndex < [_destinationViewController.viewControllers count] && _selectedTabIndex >= 0;
-    
+
     NSAssert(hasValidTabIndex,
              @"The selectedTabIndex runtime attribute must be an integer that is "
              @"0 or one less than the number of viewControllers in the destination "
